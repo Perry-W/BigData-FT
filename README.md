@@ -5,4 +5,4 @@
 
 #test change config
 
-#change by company_notebook
+#change by DELL
