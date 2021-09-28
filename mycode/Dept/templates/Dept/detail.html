@@ -1,0 +1,41 @@
+{% if detail_ft %}
+    <ul>
+        <h6>测试任务时间为：{{ detail_ft.test_date }}</h6>
+        
+        CALL测试业务：
+        {% for call in business_call %}
+        <li style="list-style-type:none;">
+            <!--
+                <a href="/Dept/call/{{call.id}}">{{ call }}</a>
+            -->
+            <a href="{% url 'Dept:business_call' call.id %}">{{ call }}</a>
+        </li>
+        {% endfor %}
+        <br/>
+        SS测试业务：
+        {% if business_ss %}
+
+            {% for ss in business_ss%}
+            <li style="list-style-type:none;">
+                <!--
+                    <a href="/Dept/call/{{call.id}}">{{ call }}</a>
+                -->
+                <a href="{% url 'Dept:business_ss' ss.id %}">{{ ss }}</a>
+            </li>
+            {% endfor%}
+
+            <!--
+                <li><a href="/Dept/ft/{{ ft.id }}/">{{res}}</a></li>
+            -->
+        {% else %}
+        暂无SS测试业务
+        {% endif %}
+        <h6>测试产品为：{{ detail_ft.test_product }}</h6>
+        <h6>测试产品的版本为：{{ detail_ft.test_pac }}</h6>
+        <h6>测试人为：{{ detail_ft.test_person }}</h6>
+        <h6>测试地点为：{{ detail_ft.test_site }}</h6>
+		
+    </ul>
+{% else %}
+    <p>No FT are available.</p>
+{% endif %}

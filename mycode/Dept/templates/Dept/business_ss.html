@@ -1,0 +1,21 @@
+{% if ss %}
+    <h6>测试的运营商：{{ss.call_operator}}</h6>
+    <!--
+    <h6>测试的环境：{{calls.call_environment}}</h6>
+    -->
+    
+    <h6>DUT数据：</h6>
+    <h6>dut_cf：{{ss.dut_cf}}</h6>
+    <h6>dut_cb：{{ss.dut_cb}}</h6>
+    <h6>dut_cw：{{ss.dut_cw}}</h6>
+   
+    <hr/>
+    <h6>REF数据：</h6>
+    <h6>ref_cf：{{ss.ref_cf}}</h6>
+    <h6>ref_cb：{{ss.ref_cb}}</h6>
+    <h6>ref_cw：{{ss.ref_cw}}</h6>
+    
+
+{% else %}
+    <p>No SS are available.</p>
+{% endif %}

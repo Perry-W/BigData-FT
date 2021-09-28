@@ -1,0 +1,49 @@
+{% if detail_tf %}
+    <ul>
+        <h6>测试执行人为：{{ detail_tf.test_person }}</h6>
+        <h6>测试任务时间为：{{ detail_tf.test_date }}</h6>
+        <h6>测试产品为：{{ detail_tf.test_product }}</h6>
+        <h6>测试产品硬件：{{ detail_tf.test_hdware }}</h6>
+        <h6>测试产品分支：{{ detail_tf.test_branch }}</h6>
+        <h6>测试产品pac：{{ detail_tf.test_pac }}</h6>
+        <h6>测试阶段：{{ detail_tf.test_state }}</h6>
+        <h6>测试地点：{{ detail_tf.test_location }}</h6>
+        <h6>启动模式：{{ detail_tf.setup_pattern }}</h6>
+        <h6>搜索模式：{{ detail_tf.search_pattern }}</h6>
+        <hr/>
+        <h6>dut1_ttff_ave：{{ detail_tf.dut1_ttff_ave }}</h6>
+        <h6>dut1_ttff_cep68：{{ detail_tf.dut1_ttff_cep68 }}</h6>
+        <h6>dut1_ttff_cep95：{{ detail_tf.dut1_ttff_cep95 }}</h6>
+        <h6>dut1_ttff_max：{{ detail_tf.dut1_ttff_max }}</h6>
+        <h6>dut1_acc_ave：{{ detail_tf.dut1_acc_ave }}</h6>
+        <h6>dut1_acc_cep68：{{ detail_tf.dut1_acc_cep68 }}</h6>
+        <h6>dut1_acc_cep95：{{ detail_tf.dut1_acc_cep95 }}</h6>
+        <h6>dut1_acc_max：{{ detail_tf.dut1_acc_max }}</h6>
+        <hr/>
+        <h6>dut2_ttff_ave：{{ detail_tf.dut2_ttff_ave }}</h6>
+        <h6>dut2_ttff_cep68：{{ detail_tf.dut2_ttff_cep68 }}</h6>
+        <h6>dut2_ttff_cep95：{{ detail_tf.dut2_ttff_cep95 }}</h6>
+        <h6>dut2_ttff_max：{{ detail_tf.dut2_ttff_max }}</h6>
+        <h6>dut2_acc_ave：{{ detail_tf.dut2_acc_ave }}</h6>
+        <h6>dut2_acc_cep68：{{ detail_tf.dut2_acc_cep68 }}</h6>
+        <h6>dut2_acc_cep95：{{ detail_tf.dut2_acc_cep95 }}</h6>
+        <h6>dut2_acc_max：{{ detail_tf.dut2_acc_max }}</h6>
+        <hr/>
+        <h6>ref_ttff_ave：{{ detail_tf.ref_ttff_ave }}</h6>
+        <h6>ref_ttff_cep68：{{ detail_tf.ref_ttff_cep68 }}</h6>
+        <h6>ref_ttff_cep95：{{ detail_tf.ref_ttff_cep95 }}</h6>
+        <h6>ref_ttff_max：{{ detail_tf.ref_ttff_max }}</h6>
+        <h6>ref_acc_ave：{{ detail_tf.ref_acc_ave }}</h6>
+        <h6>ref_acc_cep68：{{ detail_tf.ref_acc_cep68 }}</h6>
+        <h6>ref_acc_cep95：{{ detail_tf.ref_acc_cep95 }}</h6>
+        <h6>ref_acc_max：{{ detail_tf.ref_acc_max }}</h6>
+        <hr/>
+        <h6>stdvalues：{{ detail_tf.stdvalues}}</h6>
+        <h6>Result：{{ detail_tf.result}}</h6>
+
+
+
+    </ul>
+{% else %}
+    <p>No TTFF are available.</p>
+{% endif %}

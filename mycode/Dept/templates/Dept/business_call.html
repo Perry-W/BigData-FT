@@ -1,0 +1,30 @@
+{% if calls %}
+    <h6>测试的运营商：{{calls.call_operator}}</h6>
+    <h6>测试的环境：{{calls.call_environment}}</h6>
+    <h6>VONR数据：</h6>
+    <h6>voicecall_mo_dut_vonr：{{calls.voicecall_mo_dut_vonr}}</h6>
+    <h6>voicecall_mo_ref_vonr：{{calls.voicecall_mo_ref_vonr}}</h6>
+    <h6>voicecall_mt_dut_vonr：{{calls.voicecall_mt_dut_vonr}}</h6>
+    <h6>voicecall_mt_ref_vonr：{{calls.voicecall_mt_ref_vonr}}</h6>
+    <hr/>
+    <h6>EPSFB数据：</h6>
+    <h6>voicecall_mo_dut_epsfb：{{calls.voicecall_mo_dut_epsfb}}</h6>
+    <h6>voicecall_mo_ref_epsfb：{{calls.voicecall_mo_ref_epsfb}}</h6>
+    <h6>voicecall_mt_dut_epsfb：{{calls.voicecall_mt_dut_epsfb}}</h6>
+    <h6>voicecall_mt_ref_epsfb：{{calls.voicecall_mt_ref_epsfb}}</h6>
+    <hr/>
+    <h6>VOLTE数据：</h6>
+    <h6>voicecall_mo_dut_volte：{{calls.voicecall_mo_dut_volte}}</h6>
+    <h6>voicecall_mo_ref_volte：{{calls.voicecall_mo_ref_volte}}</h6>
+    <h6>voicecall_mt_dut_volte：{{calls.voicecall_mt_dut_volte}}</h6>
+    <h6>voicecall_mt_ref_volte：{{calls.voicecall_mt_ref_volte}}</h6>
+    <hr/>
+    <h6>CSFB数据：</h6>
+    <h6>voicecall_mo_dut_csfb：{{calls.voicecall_mo_dut_csfb}}</h6>
+    <h6>voicecall_mo_ref_csfb：{{calls.voicecall_mo_ref_csfb}}</h6>
+    <h6>voicecall_mt_dut_csfb：{{calls.voicecall_mt_dut_csfb}}</h6>
+    <h6>voicecall_mt_ref_csfb：{{calls.voicecall_mt_ref_csfb}}</h6>
+
+{% else %}
+    <p>No CALL are available.</p>
+{% endif %}

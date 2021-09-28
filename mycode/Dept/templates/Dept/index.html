@@ -1,0 +1,22 @@
+
+{% if ftall %}
+    <ul>
+	<!--
+    {% load static %}
+    -->
+    <!--
+    <link rel="stylesheet" type="text/css" href="{% static 'Dept/style.css' %}">
+    -->
+	<h6>CSFT相关</h6>
+	{% for ft in ftall %}
+        <li style="list-style-type:none;"><a href="{% url 'Dept:detail' ft.id %}">{{ ft }}</a></li>
+    {% endfor %}
+    <hr/>
+    <h6>GNSS相关</h6>
+    {% for ttff in ttffall %}
+        <li style="list-style-type:none;"><a href="{% url 'Dept:ttff_detail' ttff.id %}">{{ ttff }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
