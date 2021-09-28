@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Dashboard</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-laugh-wink"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">Unisoc</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>WorkStation</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Projects
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Spec</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Classification:</h6>
+                        <a class="collapse-item" href="FT_Spec.html">FT Spec</a>
+                        <a class="collapse-item" href="GNSS_Spec.html">GNSS Spec</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Nav Item - Utilities Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                    aria-expanded="true" aria-controls="collapseUtilities">
+                    <i class="fas fa-fw fa-wrench"></i>
+                    <span>Pics</span>
+                </a>
+                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Classification:</h6>
+                        <a class="collapse-item" href="FT_Pics.html">FT Pics</a>
+                        <a class="collapse-item" href="GNSS_Pics.html">GNSS Pics</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Functions
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                    aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Data Management</span>
+                </a>
+                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Classification:</h6>
+                        <a class="collapse-item" href="FT.html">FT</a>
+                        <a class="collapse-item" href="GNSS.html">GNSS</a>
+                        <!-- <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
+                        <div class="collapse-divider"></div>
+                        <h6 class="collapse-header">Other Pages:</h6>
+                        <a class="collapse-item" href="404.html">404 Page</a>
+                        <a class="collapse-item" href="blank.html">Blank Page</a> -->
+                    </div>
+                </div>
+            </li>
+
+            <!-- Nav Item - Bug Management -->   
+            <li class="nav-item">
+                <a class="nav-link" href="https://bugzilla.unisoc.com/bugzilla/">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Bug Management</span></a>
+            </li>
+
+            <!-- Nav Item - Tables
+            <li class="nav-item">
+                <a class="nav-link" href="tables.html">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Tables</span></a>
+            </li> -->
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block"> 
+            
+            
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+            <!-- Sidebar Message -->
+            <div class="sidebar-card d-none d-lg-flex">
+                <img class="sidebar-card-illustration mb-2" src="img/undraw_rocket.svg" alt="...">
+                <p class="text-center mb-2"><strong>Jump to SuperAdmin</strong></p>
+                <a class="btn btn-success btn-sm" href="http://10.6.4.53:8000/admin/">Click the Button!</a>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column row justify-content-center">
+            <!-- Main Content -->
+            <div id="content">
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                                       <div class="page-header">    
+                        <h1 class="h1 mb-0 text-gray-800">
+                            The Ecological Carrier of the Digital World</h1>   
+                    </div>
+                    <!-- </form> -->
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Username</span>
+                                <img class="img-profile rounded-circle"
+                                    src="img/undraw_profile.svg">
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Profile
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Settings
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Activity Log
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Logout
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <div class="h3 mb-0 text-gray-800">Project Information</div>
+                        <!-- <div style="margin: left -10px;">
+                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                                class="fas fa-download fa-sm text-white-50"></i> Download Report </a>
+                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                                class="fas fa-download fa-sm text-white-50"></i> Upload Report </a>
+                        </div> -->
+                    </div>
+
+                    <!-- Content Row -->
+                    <div class="card shadow mb-4">
+                        <!-- <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">项目信息</h6>
+                        </div> -->
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4">
+                                    <div class="row"><div class="col-sm-12"><table class="table table-bordered dataTable" id="dataTable" width="100%" cellspacing="0" role="grid" aria-describedby="dataTable_info" style="width: 100%;">
+                                    <thead><tr><th rowspan="1" colspan="1"><input type="checkbox" name ="allChecks" onclick="All(this, 'mm[]')" /> 
+                                    </th><th rowspan="1" colspan="1">NO.</th><th rowspan="1" colspan="1">Project</th><th rowspan="1" colspan="1">Version</th><th rowspan="1" colspan="1">Branch</th><th rowspan="1" colspan="1">Os</th><th rowspan="1" colspan="1">Update Date</th></tr>
+                                    </thead>
+                                    <!-- <tfoot>
+                                        <tr><th rowspan="1" colspan="1">NO.</th><th rowspan="1" colspan="1">Project</th><th rowspan="1" colspan="1">Version</th><th rowspan="1" colspan="1">Branch</th><th rowspan="1" colspan="1">Os</th><th rowspan="1" colspan="1">Update Date</th></tr>
+                                    </tfoot> -->                          
+                                    <tbody>   
+                                    <tr class="odd">       
+                                        <td><input type="checkbox" value="1" name="mm[]" class="check" id="ids1" onclick="Item(this, 'mmAll')"></td>
+                                        <td class="sorting_1">1</td>
+                                        <td>Shark L5 Pro</td>
+                                        <td>A12</td>
+                                        <td>TRUNK_W21.38.3</td>
+                                        <td>Windows 10</td>
+                                        <td>2021/9/23</td>
+                                    </tr><tr class="even">
+                                        <td><input type="checkbox" value="2" name="mm[]" class="check" id="ids2" onclick="Item(this, 'mmAll')"></td>
+                                        <td class="sorting_1">2</td>
+                                        <td>W117</td>
+                                        <td>A11</td>
+                                        <td>TRUNK_W21.38.3</td> 
+                                        <td>Windows 10</td>
+                                        <td>2021/9/23</td>
+                                    </tr><tr class="odd">
+                                        <td><input type="checkbox" value="3" name="mm[]" class="check" id="ids3" onclick="Item(this, 'mmAll')"></td>
+                                        <td class="sorting_1">3</td>
+                                        <td>N6 Pro</td>
+                                        <td>A11</td>
+                                        <td>TRUNK_W21.38.4</td>
+                                        <td>Windows 10</td>
+                                        <td>2021/9/23</td>
+                                    </tr><tr class="even">
+                                        <td><input type="checkbox" value="4" name="mm[]" class="check" id="ids4" onclick="Item(this, 'mmAll')"></td>
+                                        <td class="sorting_1">4</td>
+                                        <td>Qogirl L6 GE3F</td>
+                                        <td>A12</td>
+                                        <td>TRUNK_W21.38.5</td>
+                                        <td>Windows 10</td>
+                                        <td>2021/9/24</td>
+                                    </tr><tr class="odd">
+                                        <td><input type="checkbox" value="5" name="mm[]" class="check" id="ids5" onclick="Item(this, 'mmAll')"></td>
+                                        <td class="sorting_1">5</td>
+                                        <td>SS</td>
+                                        <td>A11</td>
+                                        <td>TRUNK_W21.38.3</td>
+                                        <td>Windows 10</td>
+                                        <td>2021/9/23</td>
+                                    </tr><tr class="even">
+                                        <td><input type="checkbox" value="6" name="mm[]" class="check" id="ids6" onclick="Item(this, 'mmAll')"></td>
+                                        <td class="sorting_1">6</td>
+                                        <td>Mocor_W307</td>
+                                        <td>A12</td>
+                                        <td>TRUNK_W21.37.3</td>
+                                        <td>Windows 10</td>
+                                        <td>2021/9/15</td>
+                                    </tr><tr class="odd">
+                                        <td><input type="checkbox" value="7" name="mm[]" class="check" id="ids7" onclick="Item(this, 'mmAll')"></td>
+                                        <td class="sorting_1">7</td>
+                                        <td>Qogirn L6_zebu</td>
+                                        <td>A11</td>
+                                        <td>TRUNK_W21.37.3</td>
+                                        <td>Windows 10</td>
+                                        <td>2021/9/15</td>
+                                    </tr><tr class="even">
+                                        <td><input type="checkbox" value="8" name="mm[]" class="check" id="ids8" onclick="Item(this, 'mmAll')"></td>
+                                        <td class="sorting_1">8</td>
+                                        <td>Shark L5 Pro</td>
+                                        <td>A12</td>
+                                        <td>TRUNK_W21.38.3</td>
+                                        <td>Windows 10</td>
+                                        <td>2008/11/28</td>
+                                    </tr><tr class="odd">
+                                        <td><input type="checkbox" value="9" name="mm[]" class="check" id="ids9" onclick="Item(this, 'mmAll')"></td>
+                                        <td class="sorting_1">9</td>
+                                        <td>Shark L5 Pro</td>
+                                        <td>A12</td>
+                                        <td>TRUNK_W21.38.3</td>
+                                        <td>Windows 10</td>
+                                        <td>2008/11/28</td>
+                                    </tr><tr class="even">
+                                        <td><input type="checkbox" value="10" name="mm[]" class="check" id="ids10" onclick="Item(this, 'mmAll')"></td>
+                                        <td class="sorting_1">10</td>
+                                        <td>Shark L5 Pro</td>
+                                        <td>A12</td>
+                                        <td>TRUNK_W21.38.3</td>
+                                        <td>Windows 10</td>
+                                        <td>2008/11/28</td> 
+                                    </tr><tr class="odd">
+                                        <td><input type="checkbox" value="11" name="mm[]" class="check" id="ids11" onclick="Item(this, 'mmAll')"></td>
+                                        <td class="sorting_1">11</td>
+                                        <td>Shark L5 Pro</td>
+                                        <td>A12</td>
+                                        <td>TRUNK_W21.38.3</td>
+                                        <td>Windows 10</td>
+                                        <td>2008/11/28</td>
+                                    </tr><tr class="even">
+                                        <td><input type="checkbox" value="12" name="mm[]" class="check" id="ids12" onclick="Item(this, 'mmAll')"></td>
+                                        <td class="sorting_1">12</td>
+                                        <td>Shark L5 Pro</td>
+                                        <td>A12</td>
+                                        <td>TRUNK_W21.38.3</td>
+                                        <td>Windows 10</td>
+                                        <td>2008/11/28</td>
+                                    </tr><tr class="even">
+                                        <td><input type="checkbox" value="13" name="mm[]" class="check" id="ids13" onclick="Item(this, 'mmAll')"></td>
+                                        <td class="sorting_1">13</td>
+                                        <td>Shark L5 Pro</td>
+                                        <td>A12</td>
+                                        <td>TRUNK_W21.38.3</td>
+                                        <td>Windows 10</td>
+                                        <td>2008/11/28</td>
+                                        </tr></tbody>
+                                </table></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.container-fluid -->
+            </div>
+        
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright © 2021 Unisoc (Shanghai) Technologies Co., Ltd. All Rights Reserved. 紫光展锐(上海)科技有限公司 版权所有</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+    <script src="js/multiple_select.js"></script>
+    <script src="js/demo_selected.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/datatables-demo.js"></script>
+
+    
+
+</body>
+
+</html>
